@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mk Furnitures</title>
+    <link rel="icon" href="/assets/img/sofa 1.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/src/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/assets/src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/src/css/stylus.css" />
+  </head>
+  <body style="margin: 16px">
+    <!-- nav bar begins     -->
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-light;">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="/assets/img/logo 2.png" alt=""
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsFurni"
+          aria-controls="navbarsFurni"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+          <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item nav">
+              <a class="nav-link" style="margin-right: 24px" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" style="margin-right: 24px" href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" style="margin-right: 24px" href="catalog.html"
+                >Catalog</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" style="margin-right: 24px" href="about.html"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" style="margin-right: 24px" href="contact.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+
+          <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+            <li>
+              <a class="nav-link" href="#"
+                ><img src="/assets/img/user.png"
+              /></a>
+            </li>
+            <li>
+              <a class="nav-link" href="cart.html"
+                ><img src="/assets/img/cart.png"
+              /></a>
+            </li>
+          </ul>
+          <!-- sign up button section -->
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto"
+            class="btn btn-outline-primary"
+          >
+            Login
+          </button>
+
+          <div id="id01" class="modal">
+            <form
+              class="modal-content animate"
+              action="/action_page.php"
+              method="post"
+            >
+              <div class="imgcontainer">
+                <span
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="close"
+                  title="Close Modal"
+                  >&times;</span
+                >
+                <img
+                  src="/assets/img/images (1).png"
+                  alt="Avatar"
+                  class="avatar"
+                />
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Username"
+                  name="uname"
+                  required
+                />
+
+                <label for="psw"><b>Password</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  name="psw"
+                  required
+                />
+
+                <a href="/home.html"><button type="submit">Login</button></a>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" />
+                  Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color: #f1f1f1">
+                <button
+                  type="button"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+                <span class="psw"
+                  >Forgot <a href="/passwordd.html">password?</a></span
+                >
+              </div>
+            </form>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal = document.getElementById("id01");
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+          <!-- sign up button section ends  -->
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar section ends here -->
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/assets/img/SET Funi3.jpg"
+            alt="Los Angeles"
+            class="d-block"
+            style="width: 100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <a
+                class="btn btn-lg btn-primary"
+                href="/gallery.html"
+                role="button"
+                >Gallery</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/assets/img/set funi 1.jpg"
+            alt="Chicago"
+            class="d-block"
+            style="width: 100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <p>
+                <a
+                  class="btn btn-lg btn-primary"
+                  href="/contact.html"
+                  role="button"
+                  >Contact us today</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/assets/img/set funi.jpg"
+            alt="New York"
+            class="d-block"
+            style="width: 100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <p>
+                <a
+                  class="btn btn-lg btn-primary"
+                  href="/shop.html"
+                  role="button"
+                  >Explore</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- carousel ends -->
+    <!-- marquee scetion  -->
+    <marquee behavior="" direction="left" style="margin-bottom: 24px"
+      ><h4 style="color: #e43212">
+        Welcome to our online furniture store. Our online store offers a wide
+        selection of high-quality furniture pieces for evere room in your home
+      </h4>
+    </marquee>
+    <!-- marquee section ends -->
+    <!-- carts section begins -->
+    <section class="h-100 gradient-custom" style="margin-bottom: 100px">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center my-4">
+          <div class="col-md-8">
+            <div class="card mb-4">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Cart - items</h5>
+              </div>
+              <div class="card-body">
+                <!-- Single item -->
+                <div class="row">
+                  <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <!-- Image -->
+                    <div
+                      class="bg-image hover-overlay hover-zoom ripple rounded"
+                      data-mdb-ripple-color="light"
+                    >
+                      <img
+                        src="/assets/img/hotel furnihing.jpg"
+                        class="w-100"
+                        alt="Blue Jeans Jacket"
+                      />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: rgba(251, 251, 251, 0.2)"
+                        ></div>
+                      </a>
+                    </div>
+                    <!-- Image -->
+                  </div>
+
+                  <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                    <!-- Data -->
+                    <p><strong>Hotel Furnitures</strong></p>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-primary btn-sm me-1 mb-2"
+                      data-mdb-tooltip-init
+                      title="Remove item"
+                    >
+                      <i class="fas fa-trash"></i>
+                    </button>
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-danger btn-sm mb-2"
+                      data-mdb-tooltip-init
+                      title="Move to the wish list"
+                    >
+                      <i class="fas fa-heart"></i>
+                    </button>
+                    <!-- Data -->
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <!-- Quantity -->
+                    <div class="d-flex mb-4" style="max-width: 300px">
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-primary px-3 me-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      >
+                        <i class="fas fa-minus">-</i>
+                      </button>
+
+                      <div data-mdb-input-init class="form-outline">
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form1">Quantity</label>
+                      </div>
+
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-primary px-3 ms-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      >
+                        <i class="fas fa-plus">+</i>
+                      </button>
+                    </div>
+                    <!-- Quantity -->
+
+                    <!-- Price -->
+                    <p class="text-start text-md-center">
+                      <strong>$17.99</strong>
+                    </p>
+                    <!-- Price -->
+                  </div>
+                </div>
+                <!-- Single item -->
+
+                <hr class="my-4" />
+                <!-- cart item 2 -->
+                <!-- Single item -->
+                <div class="row">
+                  <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <!-- Image -->
+                    <div
+                      class="bg-image hover-overlay hover-zoom ripple rounded"
+                      data-mdb-ripple-color="light"
+                    >
+                      <img
+                        src="/assets/img/office furnish5.jpg"
+                        class="w-100"
+                      />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: rgba(251, 251, 251, 0.2)"
+                        ></div>
+                      </a>
+                    </div>
+                    <!-- Image -->
+                  </div>
+                  <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                    <!-- Data -->
+                    <p><strong>Office Furnitures</strong></p>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-primary btn-sm me-1 mb-2"
+                      data-mdb-tooltip-init
+                      title="Remove item"
+                    >
+                      <i class="fas fa-trash"></i>
+                    </button>
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-danger btn-sm mb-2"
+                      data-mdb-tooltip-init
+                      title="Move to the wish list"
+                    >
+                      <i class="fas fa-heart"></i>
+                    </button>
+                    <!-- Data -->
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <!-- Quantity -->
+                    <div class="d-flex mb-4" style="max-width: 300px">
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-primary px-3 me-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      >
+                        <i class="fas fa-minus">-</i>
+                      </button>
+
+                      <div data-mdb-input-init class="form-outline">
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form1">Quantity</label>
+                      </div>
+
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-primary px-3 ms-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      >
+                        <i class="fas fa-plus">+</i>
+                      </button>
+                    </div>
+                    <!-- Quantity -->
+
+                    <!-- Price -->
+                    <p class="text-start text-md-center">
+                      <strong>$17.99</strong>
+                    </p>
+                    <!-- Price -->
+                  </div>
+                </div>
+                <!-- cart item 3 -->
+                <!-- Single item -->
+
+                <hr class="my-4" />
+
+                <!-- Single item -->
+                <div class="row">
+                  <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <!-- Image -->
+                    <div
+                      class="bg-image hover-overlay hover-zoom ripple rounded"
+                      data-mdb-ripple-color="light"
+                    >
+                      <img
+                        src="assets/img/Kitchen furish 1.jpg"
+                        class="w-100"
+                      />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: rgba(251, 251, 251, 0.2)"
+                        ></div>
+                      </a>
+                    </div>
+                    <!-- Image -->
+                  </div>
+
+                  <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                    <!-- Data -->
+                    <p><strong>Kitchen Furnitures</strong></p>
+
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-primary btn-sm me-1 mb-2"
+                      data-mdb-tooltip-init
+                      title="Remove item"
+                    >
+                      <i class="fas fa-trash"></i>
+                    </button>
+                    <button
+                      type="button"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-danger btn-sm mb-2"
+                      data-mdb-tooltip-init
+                      title="Move to the wish list"
+                    >
+                      <i class="fas fa-heart"></i>
+                    </button>
+                    <!-- Data -->
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <!-- Quantity -->
+                    <div class="d-flex mb-4" style="max-width: 300px">
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-primary px-3 me-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      >
+                        <i class="fas fa-minus">-</i>
+                      </button>
+
+                      <div data-mdb-input-init class="form-outline">
+                        <input
+                          id="form1"
+                          min="0"
+                          name="quantity"
+                          value="1"
+                          type="number"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form1">Quantity</label>
+                      </div>
+
+                      <button
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-primary px-3 ms-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                      >
+                        <i class="fas fa-plus">+</i>
+                      </button>
+                    </div>
+                    <!-- Quantity -->
+
+                    <!-- Price -->
+                    <p class="text-start text-md-center">
+                      <strong>$17.99</strong>
+                    </p>
+                    <!-- Price -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart section ends -->
+    <!-- filter section -->
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4"></div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#trending-products" class="text-white"
+                    >Trending Products</a
+                  >
+                </li>
+                <li><a href="#recent-products" class="text-white">Recent Products</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>Fiter Option</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+<section>
+    <main>
+      <div class="album py-5 bg-body-tertiary">
+        <h3 class="text-center">TERNDING PRODUCTS</h3>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <section>
+              <!-- first trending product -->
+              <div class="col" id="trending-products">
+                <div class="card shadow-sm">
+                 <img src="/assets/img/imgg1 (1).jpg" alt="">
+                    <rect width="100%" height="100%" fill="#55595c" />
+                  </svg>
+                  <div class="card-body">
+                    <img src="/assets/img/download (2).png" alt=""></div></div></div></section>
+                    <section>
+                    <!-- second trending product -->
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="/assets/img/imgg1 (2).jpg" alt="">
+                  <rect width="100%" height="100%" fill="#55595c" />
+                </svg>
+                <div class="card-body">
+                  <img src="/assets/img/download (2).png" alt=""></div></div></div></section>
+                  <!-- third trending product -->
+                  <section>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="/assets/img//imgg1 (3).jpg" alt="">
+                  <rect width="100%" height="100%" fill="#55595c" />
+                
+                <div class="card-body">
+               <img src="/assets/img/download (2).png" alt=""></div></div></div></section>
+               <!-- TRENDING PRODUCTS SECTION ENDS -->
+               
+               <div class="col" >
+              <div class="card shadow-sm">
+                <img src="/assets/img/imgg1 (4).jpg" alt="">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+              <img src="/assets/img/imgg1(7).jpg" alt="">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="/assets/img/imgg1 (6).jpg" alt="">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div></div></div></div></main></section>
+            <section>
+    <main>
+      <div class="album py-5 bg-body-tertiary">
+        <h3 class="text-center">RECENT PRODUCTS</h3>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <section>
+              <!-- first trending product -->
+              <div class="col" id="recent-products">
+                <div class="card shadow-sm">
+                 <img src="/assets/img/imgg1 (1).jpg" alt="">
+                    <rect width="100%" height="100%" fill="#55595c" />
+                  </svg>
+                  <div class="card-body">
+                    <img src="/assets/img/download (2).png" alt=""></div></div></div></section>
+                    <section>
+                    <!-- second trending product -->
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="/assets/img/imgg1 (2).jpg" alt="">
+                  <rect width="100%" height="100%" fill="#55595c" />
+                </svg>
+                <div class="card-body">
+                  <img src="/assets/img/download (2).png" alt=""></div></div></div></section>
+                  <!-- third trending product -->
+                  <section>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="/assets/img//imgg1 (3).jpg" alt="">
+                  <rect width="100%" height="100%" fill="#55595c" />
+                
+                <div class="card-body">
+               <img src="/assets/img/download (2).png" alt=""></div></div></div></section>
+               <!-- TRENDING PRODUCTS SECTION ENDS -->
+               
+               <div class="col" >
+              <div class="card shadow-sm">
+                <img src="/assets/img/imgg1 (4).jpg" alt="">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+              <img src="/assets/img/imgg1(7).jpg" alt="">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="/assets/img/imgg1 (6).jpg" alt="">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div></div></div></div></main></section>
+    <!-- filter section ends here -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Start Footer Section -->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="d-block mb-2"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <title>Product</title>
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
+            />
+          </svg>
+          <small class="d-block mb-3 text-body-secondary"
+            >&copy; 2017–2024</small
+          >
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Cool stuff</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Random feature</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Team feature</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Stuff for developers</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Another one</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Last time</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Resource name</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Resource</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Another resource</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Final resource</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Business</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Government</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Gaming</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Team</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <footer class="text-center">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Marykay</span></strong
+            >. All Rights Reserved
+          </div>
+        </footer>
+        <ul class="list-unstyled d-flex">
+          <img
+            class="social"
+            style="width: 60px"
+            src="/assets/img/instagram 1.png"
+            alt="instagram"
+          />
+          <img
+            class="social"
+            style="width: 60px"
+            src="/assets/img/face.png"
+            alt="twiter"
+          />
+          <img
+            class="social"
+            style="width: 60px"
+            src="/assets/img/twitter 1.png"
+            alt="whatsapp"
+          />
+          <img
+            class="social"
+            style="width: 70px"
+            src="/assets/img/whattsap 1.png"
+            alt="facebook"
+          />
+        </ul>
+      </div>
+    </footer>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- End Footer Section -->
+  </body>
+</html>
